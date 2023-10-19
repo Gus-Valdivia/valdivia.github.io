@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+*{
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b363d;
+  color: #ffff;
+  font-family: "Rajdhani", sans-serif;
+}
+.ContentUni {
+  display: flex;
+  width: 40%;
+}
+.cont_vig {
+  display: none;
+}
+.datos {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.548);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 5%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.cifdes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons input {
+  border: solid 3px rgb(0, 225, 255);
+  background: rgba(127, 236, 255, 0.44);
+}
+
+.buttons input:nth-child(2) {
+  border: solid 3px rgb(0, 255, 191);
+  background: rgba(127, 255, 210, 0.44);
+}
+
+.buttons input:last-child {
+  border: solid 3px rgb(255, 179, 0);
+  background: rgba(255, 225, 127, 0.44);
+}
+
+.buttons input:hover {
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+  background: rgb(0, 0, 0);
+  color: #ffff;
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.buttons input:active {
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.buttons input:active:nth-child(2) {
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  background: rgb(0, 255, 191);
+  border: solid 3px rgb(0, 255, 191);
+}
+.buttons input:active:last-child {
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  background: rgb(255, 179, 0);
+  border: solid 3px rgb(255, 179, 0);
+}
+.TITTLE {
+  font-size: 2rem;
+}
+.TITULO {
+  font-size: 3rem;
+}
+.input {
+  background: rgba(255, 255, 255, 0.394);
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+textarea {
+  resize: none;
+}
+.text:focus {
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+  background: none;
+  border-bottom: 2px solid white;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  color: white;
+}
+.clave_cesar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+#desplazamiento_cesar {
+  width: 20%;
+}
+#txt_cesar,
+#desplazamiento_cesar,
+#txt,
+#txtClave {
+  outline: none;
+  box-shadow: none;
+}
+.TITTLE {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+}
+.resp,
+.cop, 
+.resp2,
+.cop2 {
+  display: none;
+}
+.cop, .cop2 {
+  background: none;
+  border: 3px solid white;
+  color: white;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+.Alert_Tittle {
+  font-size: 2rem;
+  color: black;
+  font-family: "Rajdhani", sans-serif;
+}
+.Icono {
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Icono svg {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  fill: white;
+  opacity: 0.2;
+}
+.Icono svg:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  opacity: 1;
+}
+.NC {
+  display: none;
+  left: 5px;
+  right: initial;
+}
